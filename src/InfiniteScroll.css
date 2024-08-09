@@ -1,0 +1,38 @@
+.infinite-scroll-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.photo-item {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.1);
+}
+
+.loading {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
